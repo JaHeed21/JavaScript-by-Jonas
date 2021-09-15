@@ -1,8 +1,24 @@
-let dice = Math.trunc(Math.random() * 6) + 1;
-while (dice !== 6) {
-    console.log(`you rolled ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
+/* let i = 1;
+while (i >= -50 && i <= 50) {
+    console.log(`while loop replication in odd ${i}`);
+    i += 2;
 }
-if (dice === 6) {
-    console.log('you dice 6 .now the loop is end');
-}
+
+let dice = Math.trunc(Math.random() * 6) + 1; */
+
+
+const calTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+};
+
+const bills = [22, 295, 176, 400, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+for (i = 0; i < bills.length; i++) {
+    const tip = calTip(bills[i]);
+    tips.push(tip);
+    total.push(tip + bills[i]);
+};
+console.log(bills);
+console.log(tips);
+console.log(total);
