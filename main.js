@@ -1,5 +1,6 @@
-console.log('-----For Loop------');
-
-for (let i = 1; i <= 10; i++) {
-    console.log(`For loop repeatation ${i}`);
+console.log('-----While Loop repeatation----');
+let rep = 1;
+while (rep <= 10) {
+    connsole.log(`While Loop repeatation ${rep}`);
+    rep++
 }
