@@ -22,3 +22,14 @@ for (i = 0; i < bills.length; i++) {
 console.log(bills);
 console.log(tips);
 console.log(total);
+
+
+const calavarage = function (array) {
+    let sum = 0;
+    for (i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    // console.log(sum);
+    return sum / array.length;
+}
+console.log(calavarage([3, 4, 5]));
