@@ -33,3 +33,5 @@ const calavarage = function (array) {
     return sum / array.length;
 }
 console.log(calavarage([3, 4, 5]));
+console.log(calavarage(total));
+console.log(calavarage(tips));
