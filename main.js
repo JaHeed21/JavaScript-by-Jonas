@@ -49,3 +49,12 @@ for (i = 0; i < ammount.length; i++) {
     totals.push(tip + ammount[i]);
 }
 console.log(ammount, profit, totals);
+
+
+let sum = Math.trunc(Math.random() * 6) + 1;
+i = 0;
+while (i <= 19) {
+    console.log(`repliacation ${i}`);
+
+}
+sum = Math.trunc(Math.random() * 6) + 1;
