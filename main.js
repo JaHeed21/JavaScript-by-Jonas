@@ -35,3 +35,17 @@ const calavarage = function (array) {
 console.log(calavarage([3, 4, 5]));
 console.log(calavarage(total));
 console.log(calavarage(tips));
+
+
+const main = function (invest) {
+    return invest * .056;
+}
+const ammount = [80000];
+const profit = [];
+const totals = [];
+for (i = 0; i < ammount.length; i++) {
+    const tip = main(ammount[i]);
+    profit.push(tip);
+    totals.push(tip + ammount[i]);
+}
+console.log(ammount, profit, totals);
