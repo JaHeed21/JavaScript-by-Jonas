@@ -62,7 +62,7 @@ while (i !== 50) {
     }
 };
  */
-const teamDolphin = [99, 102, 87, 128];
+/* const teamDolphin = [99, 102, 87, 128];
 const teamKolas = [101, 98, 89, 128];
 
 const DAv = function (a, b, c, d) {
@@ -114,4 +114,24 @@ const tempAmplitude = function (temp) {
   }
   document.write('max temp is' + ' ' + max, 'and min temp is' + ' ' + min);
 };
-tempAmplitude(temperature);
+tempAmplitude(temperature); */
+
+const tempAmplitude = function (tem1, tem2) {
+  const temps = tem1.concat(tem2);
+  console.log(temps);
+  let max = temps[0];
+  let min = temps[0];
+  for (i = 0; i < temps.length; i++) {
+    if (temps[i] > max) {
+      max = temps[i];
+    }
+    if (temps[i] < min) {
+      min = temps[i];
+    }
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitude = tempAmplitude([32, 33, 39], [41, 38, 31]);
+console.log(amplitude);
