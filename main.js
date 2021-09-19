@@ -96,3 +96,22 @@ const calHigh = function (temps) {
   console.log(max);
 };
 calHigh([13, 2, 15, 11, 16, 9]);
+
+const temperature = [6, 7, 9, 2, -3, 11, -2, -6, 12, 17, 3];
+
+// calculate temperature amplitide
+
+const tempAmplitude = function (temp) {
+  let max = temp[0];
+  let min = temp[0];
+  for (i = 0; i < temp.length; i++) {
+    if (max < temp[i]) {
+      max = temp[i];
+    }
+    if (min > temp[i]) {
+      min = temp[i];
+    }
+  }
+  document.write('max temp is' + ' ' + max, 'and min temp is' + ' ' + min);
+};
+tempAmplitude(temperature);
