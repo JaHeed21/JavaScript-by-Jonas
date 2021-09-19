@@ -65,20 +65,34 @@ while (i !== 50) {
 const teamDolphin = [99, 102, 87, 128];
 const teamKolas = [101, 98, 89, 128];
 
-
 const DAv = function (a, b, c, d) {
-    return (a + b + c + d) / 4;
+  return (a + b + c + d) / 4;
 };
-const ScoreDolphin = DAv(teamDolphin[0], teamDolphin[1], teamDolphin[2], teamDolphin[3]);
-const ScoreKolas = DAv(teamKolas[0], teamKolas[1], teamKolas[2], teamKolas[3], );
+const ScoreDolphin = DAv(
+  teamDolphin[0],
+  teamDolphin[1],
+  teamDolphin[2],
+  teamDolphin[3]
+);
+const ScoreKolas = DAv(teamKolas[0], teamKolas[1], teamKolas[2], teamKolas[3]);
 
 console.log(ScoreDolphin, ScoreKolas);
 
 if (ScoreKolas > ScoreDolphin) {
-    console.log(`Team kolas wins with avarage score ${ScoreKolas}`)
+  console.log(`Team kolas wins with avarage score ${ScoreKolas}`);
 } else if (ScoreDolphin === ScoreKolas) {
-    console.log(`match draw with avarage ${ScoreKolas} = ${ScoreDolphin}.`)
+  console.log(`match draw with avarage ${ScoreKolas} = ${ScoreDolphin}.`);
 } else {
-    console.log(`Team Dolphin wins with avarage score${ScoreDolphin}`)
-
+  console.log(`Team Dolphin wins with avarage score${ScoreDolphin}`);
 }
+
+// find highest value of an array
+
+const calHigh = function (temps) {
+  let max = temps[0];
+  for (let i = 0; i < temps.length; i++) {
+    if (temps[i] > max) max = temps[i];
+  }
+  console.log(max);
+};
+calHigh([13, 2, 15, 11, 16, 9]);
