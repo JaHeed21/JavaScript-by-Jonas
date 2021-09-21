@@ -132,6 +132,15 @@ const tempAmplitude = function (tem1, tem2) {
   console.log(max, min);
   return max - min;
 };
-
+const TEST1 = [17, 21, 23];
 const amplitude = tempAmplitude([32, 33, 39], [41, 38, 31]);
 console.log(amplitude);
+
+const printForcast = function (array) {
+  let string = '';
+  for (let i = 0; i < array.length; i++) {
+    string = string + `${array[i]} celcious in day ${i + 1}... `;
+  }
+  console.log('...' + string);
+};
+printForcast(TEST1);
