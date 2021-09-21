@@ -144,3 +144,17 @@ const printForcast = function (array) {
   console.log('...' + string);
 };
 printForcast(TEST1);
+
+const kalvinMeasure = function () {
+  const measurement = {
+    type: 'temperature',
+    Unit: 'celcius',
+    value: Number(
+      prompt('Put temperature in celcius to get kalvin unit temperature')
+    ),
+  };
+
+  const kalvin = measurement.value + 273 + ' ' + 'kelvin';
+  return kalvin;
+};
+console.log(kalvinMeasure());
