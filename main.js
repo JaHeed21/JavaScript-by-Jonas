@@ -144,7 +144,7 @@ const printForcast = function (array) {
   console.log('...' + string);
 };
 printForcast(TEST1);
-
+/* 
 const kalvinMeasure = function () {
   const measurement = {
     type: 'temperature',
@@ -156,7 +156,7 @@ const kalvinMeasure = function () {
   const kalvin = measurement.value + 273 + ' ' + 'kelvin';
   return kalvin;
 };
-console.log(kalvinMeasure());
+console.log(kalvinMeasure()); */
 
 const day = prompt('Enter a week day to know what i do that day.');
 switch (day) {
@@ -177,4 +177,17 @@ switch (day) {
     break;
   default:
     console.log('what you enter its not a valid day.');
+}
+
+if (day == 'monday') {
+  console.log('plan course structure');
+  console.log('Go to Coading meetup');
+} else if (day == 'tuesday') {
+  console.log('Write script for videos.');
+} else if (day == 'wednesday' || day == 'thursday') {
+  console.log('Make videos on script and upload on my channel');
+} else if (day == 'friday' || day == 'saturday') {
+  console.log('enjoy my weekend');
+} else {
+  console.log('what you enter its not a valid day.');
 }
