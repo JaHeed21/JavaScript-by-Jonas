@@ -159,25 +159,6 @@ const kalvinMeasure = function () {
 console.log(kalvinMeasure()); */
 
 const day = prompt('Enter a week day to know what i do that day.');
-switch (day) {
-  case 'monday':
-    console.log('plan course structure');
-    console.log('Go to Coading meetup');
-    break;
-  case 'tuesday':
-    console.log('Write script for videos.');
-    break;
-  case 'wednesday':
-  case 'thursaday':
-    console.log('Make videos on script and upload on my channel');
-    break;
-  case 'friday':
-  case 'saturday':
-    console.log('enjoy my weekend');
-    break;
-  default:
-    console.log('what you enter its not a valid day.');
-}
 
 if (day == 'monday') {
   console.log('plan course structure');
