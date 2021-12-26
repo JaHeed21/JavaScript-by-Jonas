@@ -158,7 +158,7 @@ const kalvinMeasure = function () {
 };
 console.log(kalvinMeasure()); */
 
-const day = prompt('Enter a week day to know what i do that day.');
+/* const day = prompt('Enter a week day to know what i do that day.');
 
 if (day == 'monday') {
   console.log('plan course structure');
@@ -172,3 +172,12 @@ if (day == 'monday') {
 } else {
   console.log('what you enter its not a valid day.');
 }
+ */
+
+function frutuitprocessor(apples, mangoes) {
+  console.log(apples, mangoes);
+  const juice = `juice with ${apples} apples and ${mangoes} mangoes.`;
+  return juice;
+}
+
+console.log(frutuitprocessor(3, 5));
