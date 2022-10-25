@@ -1,3 +1,4 @@
+// from lecture 47 in C programming
 #include<stdio.h>
 int main(){
 int b, c, i;
